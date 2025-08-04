@@ -2,7 +2,7 @@
 
 A high-performance, production-ready crypto derivatives trading system backend built with FastAPI, PostgreSQL, and Redis.
 
-[![Tests](https://img.shields.io/badge/tests-25%20passed-brightgreen)](tests/)
+[![Tests](https://img.shields.io/badge/tests-14%20passed-brightgreen)](tests/)
 [![Python](https://img.shields.io/badge/python-3.11+-blue)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.116+-green)](https://fastapi.tiangolo.com)
 [![Docker](https://img.shields.io/badge/docker-ready-blue)](Dockerfile)
@@ -18,7 +18,7 @@ This project demonstrates a **production-ready fintech backend** that simulates 
 - ⚡ **Redis** caching for high-performance data retrieval
 - 🧮 **Advanced margin calculations** with liquidation price modeling
 - 🐳 **Docker containerization** for easy deployment
-- 🧪 **Comprehensive test suite** (25 tests, 100% core coverage)
+- 🧪 **Comprehensive test suite** (14 tests, 100% core coverage)
 - 📊 **Production-ready architecture** with proper separation of concerns
 
 ## 🛠️ Technology Stack
@@ -63,6 +63,28 @@ cp .env.example .env
 
 # Run the application
 uvicorn app.main:app --reload
+```
+
+## 🔧 Development Workflow
+
+```bash
+# Setup
+make install          # Install dependencies
+make help            # See all available commands
+
+# Development
+make run             # Start development server
+make test            # Run test suite
+make test-cov        # Run tests with coverage
+
+# Code Quality
+make format          # Format code (Black + isort)
+make lint            # Check code quality (flake8)
+
+# Docker
+make docker-build    # Build containers
+make docker-up       # Start full stack
+make docker-down     # Stop all services
 ```
 
 ## 📖 API Documentation
@@ -235,10 +257,4 @@ This project demonstrates production-ready development practices:
 4. **Testing**: High test coverage with realistic scenarios
 5. **Documentation**: Self-documenting code with OpenAPI specs
 
-## 📄 License
-
-This project is for demonstration purposes and showcases modern Python backend development skills.
-
 ---
-
-**Built with ❤️ for the fintech industry**
