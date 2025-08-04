@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+
 from app.api import trades
 from app.config import settings
 
@@ -21,21 +22,27 @@ app.add_middleware(
 # Include routers
 app.include_router(trades.router)
 
+
 @app.get("/")
 async def root():
     return {"message": "Crypto Derivatives Trade Tracker API", "status": "running"}
+
 
 @app.get("/health")
 async def health_check():
     return {"status": "healthy", "environment": settings.ENVIRONMENT}
 
+
 @app.on_event("startup")
 async def startup_event():
     """Initialize database tables on startup (if database is available)"""
     try:
-        from app.database import engine, Base
+        from app.database import Base, engine
+
         Base.metadata.create_all(bind=engine)
         print("✅ Database tables created successfully")
     except Exception as e:
         print(f"⚠️  Database not available: {e}")
-        print("   API will work for margin simulation, but database operations will fail")
+        print(
+            "   API will work for margin simulation, but database operations will fail"
+        )

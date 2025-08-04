@@ -1,16 +1,21 @@
-from sqlalchemy import Column, Integer, String, Numeric, DateTime, Enum
-from sqlalchemy.sql import func
-from app.database import Base
 import enum
+
+from sqlalchemy import Column, DateTime, Enum, Integer, Numeric, String
+from sqlalchemy.sql import func
+
+from app.database import Base
+
 
 class TradeSide(str, enum.Enum):
     LONG = "long"
     SHORT = "short"
 
+
 class TradeStatus(str, enum.Enum):
     PENDING = "pending"
     FILLED = "filled"
     CANCELLED = "cancelled"
+
 
 class Trade(Base):
     __tablename__ = "trades"
