@@ -63,6 +63,3 @@ logs/
 .pytest_cache/
 .tox/
 htmlcov/
-
-# Docker
-.dockerignore
