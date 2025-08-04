@@ -39,7 +39,7 @@ This project demonstrates a **production-ready fintech backend** that simulates 
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/kevpstephens/crypto-derivs-trade-tracker.git
 cd crypto-trade-tracker
 
 # Start all services
