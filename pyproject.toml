@@ -1,5 +1,5 @@
 [project]
-name = "crypto-trade-tracker"
+name = "crypto-derivs-trade-tracker"
 version = "1.0.0"
 description = "A production-ready crypto derivatives trading system backend"
 authors = [
