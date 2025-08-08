@@ -1,4 +1,4 @@
-# 🚀 Crypto Derivatives Trade Tracker
+# Crypto Derivatives Trade Tracker
 
 A high-performance, production-ready crypto derivatives trading system backend built with FastAPI, PostgreSQL, and Redis.
 
@@ -7,21 +7,21 @@ A high-performance, production-ready crypto derivatives trading system backend b
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.116+-green)](https://fastapi.tiangolo.com)
 [![Docker](https://img.shields.io/badge/docker-ready-blue)](Dockerfile)
 
-## 🎯 Overview
+##cOverview
 
 This project demonstrates a **production-ready fintech backend** that simulates core functionality of crypto derivatives trading platforms like BitMEX, Binance Futures, or FTX. Built with modern Python technologies and following industry best practices.
 
 ### Key Features
 
-- 🏗️ **RESTful API** with automatic OpenAPI documentation
-- 🗄️ **PostgreSQL** for persistent trade storage
-- ⚡ **Redis** caching for high-performance data retrieval
-- 🧮 **Advanced margin calculations** with liquidation price modeling
-- 🐳 **Docker containerization** for easy deployment
-- 🧪 **Comprehensive test suite** (14 tests, 100% core coverage)
-- 📊 **Production-ready architecture** with proper separation of concerns
+- **RESTful API** with automatic OpenAPI documentation
+- **PostgreSQL** for persistent trade storage
+- **Redis** caching for high-performance data retrieval
+- **Advanced margin calculations** with liquidation price modeling
+- **Docker containerization** for easy deployment
+- **Comprehensive test suite** (14 tests, 100% core coverage)
+- **Production-ready architecture** with proper separation of concerns
 
-## 🛠️ Technology Stack
+## Tech Stack
 
 | Component             | Technology              | Purpose                      |
 | --------------------- | ----------------------- | ---------------------------- |
@@ -33,7 +33,7 @@ This project demonstrates a **production-ready fintech backend** that simulates 
 | **Testing**           | Pytest 8.0+             | Comprehensive test coverage  |
 | **Containerization**  | Docker & Docker Compose | Deployment & orchestration   |
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Option 1: Docker (Recommended)
 
@@ -65,7 +65,7 @@ cp .env.example .env
 uvicorn app.main:app --reload
 ```
 
-## 🔧 Development Workflow
+## Development Workflow
 
 ```bash
 # Setup
@@ -87,7 +87,7 @@ make docker-up       # Start full stack
 make docker-down     # Stop all services
 ```
 
-## 📖 API Documentation
+## API Documentation
 
 ### Core Endpoints
 
@@ -156,7 +156,7 @@ curl -X POST "http://localhost:8000/trades/simulate-margin" \
 }
 ```
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -193,14 +193,14 @@ pytest tests/test_services_complete.py -v
 
 **Test Coverage:**
 
-- ✅ API endpoints (success & error cases)
-- ✅ Margin calculation accuracy
-- ✅ Data validation
-- ✅ Database operations
-- ✅ Cache functionality
-- ✅ Edge cases & boundary conditions
+- API endpoints (success & error cases)
+- Margin calculation accuracy
+- Data validation
+- Database operations
+- Cache functionality
+- Edge cases & boundary conditions
 
-## 💡 Key Technical Decisions
+## Key Technical Decisions
 
 ### Financial Precision
 
@@ -221,7 +221,7 @@ pytest tests/test_services_complete.py -v
 - Docker containerization for consistent deployments
 - Environment-based configuration management
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] **Authentication & Authorization** (JWT-based)
 - [ ] **WebSocket Support** for real-time updates
@@ -231,7 +231,7 @@ pytest tests/test_services_complete.py -v
 - [ ] **Metrics & Monitoring** (Prometheus/Grafana)
 - [ ] **CI/CD Pipeline** (GitHub Actions)
 
-## 📊 Financial Concepts Implemented
+## Financial Concepts Implemented
 
 ### Margin Trading
 
@@ -246,15 +246,3 @@ pytest tests/test_services_complete.py -v
 - Leverage limits (1x-100x)
 - Margin requirement calculations
 - Maximum loss estimation
-
-## 🤝 Contributing
-
-This project demonstrates production-ready development practices:
-
-1. **Clean Architecture**: Separation of concerns with models, services, and API layers
-2. **Type Safety**: Full type hints throughout the codebase
-3. **Error Handling**: Comprehensive validation and error responses
-4. **Testing**: High test coverage with realistic scenarios
-5. **Documentation**: Self-documenting code with OpenAPI specs
-
----
