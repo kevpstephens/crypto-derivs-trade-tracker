@@ -7,7 +7,7 @@ A high-performance, production-ready crypto derivatives trading system backend b
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.116+-green)](https://fastapi.tiangolo.com)
 [![Docker](https://img.shields.io/badge/docker-ready-blue)](Dockerfile)
 
-##cOverview
+## Overview
 
 This project demonstrates a **production-ready fintech backend** that simulates core functionality of crypto derivatives trading platforms like BitMEX, Binance Futures, or FTX. Built with modern Python technologies and following industry best practices.
 
@@ -177,7 +177,7 @@ curl -X POST "http://localhost:8000/trades/simulate-margin" \
 └─────────────────┘    └─────────────────┘
 ```
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests
